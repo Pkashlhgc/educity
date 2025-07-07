@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import './VideoPlayer.css';
-import Video from '../../assets/video-player.mp4'; // ✅ use lowercase file name
+import Video from '../../assets/video-player.mp4'; 
 
 const VideoPlayer = ({ playState, setPlayState }) => {
 
