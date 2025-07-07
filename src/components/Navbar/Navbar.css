@@ -1,7 +1,7 @@
 nav{
     width: 100%;
     /* background: #333; */
-    color: #ffffff;
+    color: #f1eaea;
     padding: 4px 0;
     position: fixed;
     top: 0;
@@ -12,6 +12,7 @@ nav{
     z-index: 10;
 
 }
+
 .logo{
     width: 180px;
 
@@ -43,7 +44,7 @@ nav ul li{
   ul {
     display: none;
     flex-direction: column;
-    background: #1122aa;
+    background: #f1f1f5;
     position: absolute;
     top: 80px;
     right: 20px;
