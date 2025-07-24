@@ -7,6 +7,32 @@ import user_2 from '../../assets/user-2.png';
 import user_3 from '../../assets/user-3.png';
 import user_4 from '../../assets/user-4.png';
 
+const testimonialsData = [
+  {
+    img: user_1,
+    name: 'William Sakspear',
+    title: 'Edusity',
+    message: 'Choosing to pursue my degree at Edusity was one of the best decisions I\'ve ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.',
+  },
+  {
+    img: user_2,
+    name: 'Emma Watson',
+    title: 'Edusity',
+    message: 'Edusity gave me the platform to grow both personally and professionally. The faculty is amazing and always supportive.',
+  },
+  {
+    img: user_3,
+    name: 'John Doe',
+    title: 'Edusity',
+    message: 'The environment at Edusity encourages learning and innovation. I made lifelong friends and mentors here.',
+  },
+  {
+    img: user_4,
+    name: 'Sophia Lee',
+    title: 'Edusity',
+    message: 'Great infrastructure, dedicated professors, and a wonderful learning experience overall. I highly recommend Edusity!',
+  }
+];
 
 const Testimonials = () => {
   const slide = useRef();
@@ -32,23 +58,17 @@ const Testimonials = () => {
       <img src={back_icon} alt='' className='back-btn' onClick={slideBackword} />
       <div className='slider'>
         <ul ref={slide}>
-          {[user_1, user_2, user_3, user_4].map((user, index) => (
+          {testimonialsData.map((user, index) => (
             <li key={index}>
               <div className='slide'>
                 <div className='user-info'>
-                  <img src={user} alt='' />
+                  <img src={user.img} alt={user.name} />
                   <div>
-                    <h3>William Sakspear</h3>
-                    
-                    
-                    <span>Edusity</span>
+                    <h3>{user.name}</h3>
+                    <span>{user.title}</span>
                   </div>
                 </div>
-                <p>
-                  Choosing to pursue my degree at Edusity was one of the best decisions I've ever made. The supportive
-                  community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my
-                  expectations.
-                </p>
+                <p>{user.message}</p>
               </div>
             </li>
           ))}

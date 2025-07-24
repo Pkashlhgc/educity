@@ -21,7 +21,8 @@
 }
 .btn{
   background: #1852e3;
-  color: #212221;
+  margin-top: 10%;
+  color: white;
   padding: 14px 25px;
   font-size: 16px;
   border-radius: 30px;
@@ -39,6 +40,7 @@
 }
 .btn.dark-btn{
   background: #4141d6;
+  top: 30%;
   /* color: #212221;
   padding: 14px 25px;
   font-size: 16px;
